@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title th:text="${employee.firstName}"></title>
+    <style>
+      div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
+
+      div p{
+        text-align: center;
+        font-size: 25px;
+        font-weight: bold;
+      }
+    </style>
+</head>
+<body>
+<div>
+  <p th:text="${employee.id}"></p>
+  <p th:text="${employee.firstName}"></p>
+  <p th:text="${employee.lastName}"></p>
+  <p th:text="${employee.email}"></p>
+  <p th:text="${employee.companyName}"></p>
+  <p th:text="${employee.salary}"></p>
+</div>
+</body>
+</html>
